@@ -37,3 +37,10 @@
 - Python 必须用全路径 `C:\Users\win\AppData\Local\Programs\Python\Python312\python.exe`（`py -3.12` 已不可用）
 - 构建流程：`cd app && npm run build`，再跑 `工具/make_precache.py` 生成 `dist/precache-manifest.json`
 - 离线验收：`工具/test_offline.py`（连无头 Chrome 的 CDP，切离线后回读页面）
+
+## 发布
+
+- 代码仓库：<https://github.com/wb1989mx/xiaonuan-poems>（公开）
+- 线上站点：<https://wb1989mx.github.io/xiaonuan-poems/>（GitHub Pages，源为 `main` 分支 `/docs` 目录）
+- `docs/` 是 `app/dist` 的完整拷贝，每次改完页面按顺序来：`npm run build` → `工具/make_precache.py` → 用 `app\dist` 覆盖 `docs\` → 提交推送。少任何一步，线上都是旧站或清单为空。
+- 字体改了文案要重跑 `工具/build_fonts.py`，否则新字回落到系统字体。
