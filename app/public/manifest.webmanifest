@@ -1,0 +1,32 @@
+{
+  "name": "小暖的诗集 · 儿童诗词阅读",
+  "short_name": "小暖的诗集",
+  "description": "十首古诗，一诗一屏：读一读、看一看、讲一讲、玩一玩。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#FFF7EC",
+  "theme_color": "#FFF7EC",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
